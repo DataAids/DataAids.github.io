@@ -1,89 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="DataAids leverages data science to develop innovative solutions that empower marginalized communities and promote social inclusion. We gather and process information from various sources such as surveys and government databases to understand social problems. Our goal is to make a positive difference by providing tools, training, and support in healthcare, education, and job opportunities for underserved groups. Join us in promoting fairness and empowering marginalized communities."
-        />
-        <meta
-            name="keywords"
-            content="DataAids, data science, innovative solutions, marginalized communities, social inclusion, social problems, surveys, government databases, tools, training, healthcare, education, job opportunities, positive difference, fairness, empowerment, underserved groups"
-        />
-        <title>DataAids</title>
-        <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="app.js"></script>
-    </head>
-
-    <body>
-        <header>
-            <nav>
-                <div class="nav-content">
-                    <img src="assets/logo.png" alt />
-                    <h1>DataAids</h1>
-                </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#mission">Mission</a></li>
-                    <li><a href="#board">Board</a></li>
-                </ul>
-            </nav>
-
-            <div class="title">
-                <div class="title-content">
-                    <h1>DataAids</h1>
-                    <p>
-                        We leverage data science to develop innovative solutions
-                        that empower marginalized communities and promote social
-                        inclusion.
-                    </p>
-                </div>
-                <img class="title-img" src="assets/title.svg" alt />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataAids</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="/assets/logo.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body class="font-sans bg-gray-100">
+    <header class="bg-blue-600 text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="/assets/logo.png" alt="DataAids Logo" class="h-10 w-10 mr-3">
+                <a href="#" class="text-2xl font-bold">DataAids</a>
             </div>
-        </header>
+            <div class="hidden md:flex space-x-4">
+                <a href="#mission" class="hover:text-blue-200">Mission</a>
+                <a href="#values" class="hover:text-blue-200">Values</a>
+                <a href="#projects" class="hover:text-blue-200">Projects</a>
+                <a href="#team" class="hover:text-blue-200">Team</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
-        <section id="mission">
-            <div class="mission-content">
-                <h1>Mission</h1>
-                <p>
-                    DataAids uses data science to understand social problems and
-                    develop solutions. We gather and process information from
-                    various sources such as surveys and government databases.
-                    With this data, we develop tools and training to help
-                    marginalized communities with healthcare, education, and job
-                    opportunities. We aim to make a positive difference, promote
-                    fairness, and empower underserved groups.
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-blue-500 text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Empowering Communities Through Data</h1>
+                <p class="text-xl mb-8">We leverage data science to develop innovative solutions that promote social inclusion.</p>
+                <a href="#mission" class="bg-white text-blue-500 py-2 px-6 rounded-full text-lg font-semibold hover:bg-blue-100 transition duration-300">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">Our Mission</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center">
+                    DataAids uses data science to understand social problems and develop solutions. We gather and process information from various sources such as surveys and government databases. With this data, we develop tools and training to help marginalized communities with healthcare, education, and job opportunities. We aim to make a positive difference, promote fairness, and empower underserved groups.
                 </p>
             </div>
         </section>
 
-        <section id="board">
-            <h1 class="board-title">Board</h1>
-            <div class="board-container">
-                <ul class="members">
-                    <li>
-                        <img src="assets/board/rahul.jpg" alt />
-                        <h1>Rahul Manchanda</h1>
-                        <p>Founder</p>
-                    </li>
-                    <li>
-                        <img src="assets/board/shreyas.jpg" alt />
-                        <h1>Shreyas Bhargava</h1>
-                        <p>Board Member</p>
-                    </li>
-                    <li>
-                        <img src="assets/board/barbara.jpg">
-                        <h1>Barbara Ireland</h1>
-                        <p>Board Member</p>
-                    </li>
-                </ul>
+        <!-- Values Section -->
+        <section id="values" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <i class="fas fa-chart-bar text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Data-Driven Innovation</h3>
+                        <p class="text-gray-600">We harness the power of data to drive meaningful change.</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-hands-helping text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Community Empowerment</h3>
+                        <p class="text-gray-600">We believe in equipping communities with tools for self-improvement.</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-balance-scale text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Social Inclusion</h3>
+                        <p class="text-gray-600">We strive for fairness and equal opportunities for all.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer>
-            <p>&copy; DataAids 2023</p>
-        </footer>
-    </body>
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-100 rounded-lg p-6 shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Excel Processor</h3>
+                        <p class="text-gray-600 mb-4">Easy-to-use tool to organize unfiltered zip code data.</p>
+                        <a href="https://dataaids.org/Excel%20Processor.exe" class="text-blue-500 hover:underline">Download <i class="fas fa-download ml-1"></i></a>
+                    </div>
+                    <!-- <div class="bg-gray-100 rounded-lg p-6 shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Education Equity Project</h3>
+                        <p class="text-gray-600 mb-4">Analyzing and addressing educational disparities in communities.</p>
+                        <a href="#" class="text-blue-500 hover:underline">Download Report <i class="fas fa-download ml-1"></i></a>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-6 shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Job Opportunity Mapper</h3>
+                        <p class="text-gray-600 mb-4">Connecting marginalized groups with employment opportunities.</p>
+                        <a href="#" class="text-blue-500 hover:underline">Download Report <i class="fas fa-download ml-1"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Board Members</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <img src="/assets/board/rahul.jpg" alt="Rahul Manchanda" class="rounded-full mx-auto mb-4 w-32 h-32">
+                        <h3 class="text-xl font-semibold mb-2">Rahul Manchanda</h3>
+                        <p class="text-gray-600">Founder</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/assets/board/shreyas.jpg" alt="Shreyas Bhargava" class="rounded-full mx-auto mb-4 w-32 h-32">
+                        <h3 class="text-xl font-semibold mb-2">Shreyas Bhargava</h3>
+                        <p class="text-gray-600">Secretary</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/assets/board/barbara.jpg" alt="Barbara Ireland" class="rounded-full mx-auto mb-4 w-32 h-32">
+                        <h3 class="text-xl font-semibold mb-2">Barbara Ireland</h3>
+                        <p class="text-gray-600">Treasurer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <img src="/assets/logo.png" alt="DataAids Logo" class="h-10 w-10 inline-block mr-2">
+                    <span class="text-xl font-semibold">DataAids</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/DataAids" class="hover:text-blue-200"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="mt-4 text-center text-sm">
+                &copy; 2024 DataAids. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
